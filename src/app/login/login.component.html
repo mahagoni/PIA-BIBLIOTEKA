@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="row justify-content-around pt-5">
+    <div class="col-md-6">
+        <h3>Prijava</h3>
+        <br>
+        <form>
+            <div class="mb-3">
+              <label for="k1" class="form-label">Korisnicko ime</label>
+              <input type="text" class="form-control" id='k1' name='korisnicko_ime' [(ngModel)]='korisnicko_ime'>
+            </div>
+            <div class="mb-3">
+              <label for="l1" class="form-label">Lozinka</label>
+              <input type="password" class="form-control" id='l1' name='lozinka' [(ngModel)]='lozinka'>
+            </div>
+            <button type="submit" class="btn btn-primary" value='Prijava' (click)='prijavaNaSistem()'>Prijava</button>
+            <div class="form-text danger d-none">{{poruka}}.</div>
+        </form>
+    </div>
+</div>
